@@ -4,15 +4,15 @@ def run_guessing_game
   puts "Guess a number between 1 and 6."
   input = gets.chomp
   number = rand(1..6)
-
-      case input
+if input != number
+  puts "The computer guessed #{computer_number}."
+end
+    case input
       when "exit"
         puts "Goodbye!"
         break
       when number.to_s
         puts "You guessed the correct number!"
-      when !number.to_s
-        puts "The computer guessed #{computer_number}."
     end
   end
 end
