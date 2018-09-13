@@ -6,7 +6,6 @@ def run_guessing_game
     case input
       when "exit"
         puts "Goodbye!"
-        break
       when number.to_i
         puts "You guessed the correct number!"
       when input.to_i == false
