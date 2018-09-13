@@ -5,7 +5,7 @@ def run_guessing_game
   input = gets.chomp
   number = rand(1..6)
 if input != number
-  puts "The computer guessed #{computer_number}."
+  puts "The computer guessed #{number}."
 end
     case input
       when "exit"
