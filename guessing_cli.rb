@@ -9,8 +9,9 @@ def run_guessing_game
       when "exit"
         puts "Goodbye!"
         break
-      when number.to_s
+      when number
         puts "You guessed the correct number!"
-      else
+      when number_s
+        puts "The computer guessed #{computer_number}."
   end
 end
