@@ -1,5 +1,6 @@
 # Code your solution here!
 def run_guessing_game
+  loop do
   puts "Guess a number between 1 and 6."
   number = rand(1..6)
   input = gets.chomp.to_s
@@ -12,4 +13,5 @@ def run_guessing_game
     else
       return "Invalid input"
     end
+  end
 end
