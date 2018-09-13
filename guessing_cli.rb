@@ -10,7 +10,7 @@ def run_guessing_game
         break
       when number.to_s
         puts "You guessed the correct number!"
-      else
+      when input != number.to_s
         puts "The computer guessed #{computer_number}."
       end
   end
