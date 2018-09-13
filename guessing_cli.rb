@@ -8,9 +8,5 @@ def run_guessing_game
         puts "Goodbye!"
       when number.to_i
         puts "You guessed the correct number!"
-      when input.to_i == false
-        puts "The computer guessed #{number}"
-      else
-        puts "Invalid input"
     end
 end
